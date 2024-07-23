@@ -1,16 +1,16 @@
 import Layout from "../../components/layout";
 import { getAllPostIds, getPostData } from "../../lib/posts";
+import Date from "../../components/date";
 
 export default function Post({ postData }) {
   return (
     <Layout>
-      {postData.title}
-      <br />
-      {postData.id}
-      <br />
-      {postData.date}
-      <br />
-      <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+      {/* Keep the existing code here */}
+
+      {/* Replace {postData.date} with this */}
+      <Date dateString={postData.date} />
+
+      {/* Keep the existing code here */}
     </Layout>
   );
 }
